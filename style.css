@@ -6,10 +6,25 @@
 
 body{
     /*background: url("img/background.jpg");*/
-    background-color: #4451ff;
+    background-color: #482EF2;
     background-size: 100vw 100vh;
     font-size: 15px;
+    font-family: 'Baloo 2', cursive;
     /*height: 100vh;*/
+}
+
+.site-title{
+    font-family: 'Sriracha', cursive;
+    text-shadow: 2px 2px black;
+}
+
+.site-subtitle{
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 2px 2px black;
+}
+
+.portfolio figure:hover{
+    text-shadow: 0.3px 0.3px black;
 }
 
 @media (min-width: 400px) {
@@ -27,6 +42,7 @@ body{
     }
     .site-title{
         font-size: 50px;
+        text-shadow: 4px 4px black;
     }
 
 }
@@ -50,7 +66,7 @@ header{
 }
 
 .menu{
-    background-color: white;
+    background-color: #F2F2F2;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -62,14 +78,19 @@ header{
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-.menu a{
+.menu a {
     color: teal;
     display: block;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 15px;
+}
+
+.menu a:hover{
+    color: #482EF2;
+    text-shadow: 1px 1px #482EF2;
 }
 
 .site-title, .site-subtitle{
@@ -77,11 +98,118 @@ header{
     text-align: center;
 }
 
-.site-subtitle{
-    font-style: italic;
+.img-portfolio{
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.img-portfolio{
-    width: 180px;
-    height: 180px;
+.portfolio{
+    background-color: #3747A6;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
 }
+
+.portfolio a{
+    text-decoration: none;
+}
+
+.portfolio h2{
+    margin-bottom: 1em;
+    text-align: center;
+    color: #F2F2F2;
+    text-shadow: 2px 2px black;
+}
+
+.portfolio h3{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #F2F2F2;
+    text-shadow: 2px 2px black;
+}
+
+.portfolio figure{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 375px) {
+    .grid figcaption{
+        color: whitesmoke;
+    }
+}
+
+@media (min-width: 640px) {
+    .grid{
+        grid-template-columns: 260px 260px;
+        justify-content: center;
+    }
+
+    .grid figcaption{
+        margin-top: -23px;
+        padding-top: 18px;
+        padding-bottom: 5px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .portfolio figure{
+        box-shadow: 3px 3px 6px black;
+        border-radius: 10px;
+    }
+
+    .portfolio h2{
+        text-shadow: 3px 3px black;
+    }
+
+    .portfolio h3{
+        text-shadow: 3px 3px black;
+    }
+}
+
+@media (min-width: 940px) {
+    .grid{
+        column-gap: 8em;
+        justify-content: center
+    }
+}
+
+@media (min-width: 1240px) {
+    .grid{
+        column-gap: 2em;
+        grid-template-columns: 260px 260px 260px 260px;
+        justify-content: center
+    }
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.footer-icon-linkedin, .footer-icon-github{
+    color: black;
+}
+
+.footer-icon-github:hover{
+    color: rebeccapurple;
+}
+
+.footer-icon-linkedin:hover{
+    color: blue;
+}
+
+
+
+
