@@ -5,10 +5,12 @@
 }
 
 body{
+    /*background: url("img/background.jpg");*/
     background-color: #482EF2;
     background-size: 100vw 100vh;
     font-size: 15px;
     font-family: 'Baloo 2', cursive;
+    /*height: 100vh;*/
 }
 
 .site-title{
@@ -19,19 +21,43 @@ body{
 .site-subtitle{
     font-family: 'Major Mono Display', monospace;
     text-shadow: 2px 2px black;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animação-digitando{
+    animation: digitar 1.5s steps(40) both, cursor-transparente 500ms infinite normal;
+}
+
+@keyframes digitar {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 13ch;
+    }
+}
+
+@keyframes cursor-transparente{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
 
 .portfolio figure:hover{
     text-shadow: 0.3px 0.3px black;
-}
 
-@media (min-width: 400px) {
-    body{
-        font-size: 20px;
-    }
 }
 
 @media (min-width: 600px) {
+    /*body{
+        font-size: 23px;
+    }*/
     .menu a{
         font-size: 20px;
     }
@@ -67,25 +93,45 @@ header{
     top: 0;
 }
 
-.menu li {
-    list-style: none;
-}
-
 .menu ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.menu a {
-    color: teal;
+.menu li {
+    /*list-style: none;*/
+    float: right;
+}
+
+.logo{
+    font-family: 'Sriracha', cursive;
+    color: #0004BF;
+    text-shadow: 0.5px 0.5px 2px black;
+    margin-left: 1em;
+    display: block;
+    padding-top: 2.5px;
+    text-decoration: none;
+    transition: color, text-shadow, 0.5s;
+}
+
+.logo:hover{
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px #0004BF;
+}
+
+.menu-list {
+    color: black;
     display: block;
     text-decoration: none;
     padding: 5px 15px;
+    transition: color, text-shadow, 0.5s;
 }
 
-.menu a:hover{
-    color: #482EF2;
+.menu-list:hover{
+    background-color: #482EF2;
+    color: #F2F2F2;
     text-shadow: 1px 1px #482EF2;
 }
 
@@ -107,11 +153,12 @@ header{
     padding-bottom: 2em;
 }
 
-.portfolio a{
+.portfolio a, .contato a{
+    color: black;
     text-decoration: none;
 }
 
-.portfolio h2{
+.portfolio h2, .contato h2{
     margin-bottom: 1em;
     text-align: center;
     color: #F2F2F2;
@@ -128,10 +175,7 @@ header{
 
 .portfolio figure{
     text-align: center;
-}
-
-.portfolio figcaption{
-    color: #F2F2F2;
+    transition: text-shadow, opacity, 0.5s;
 }
 
 .grid{
@@ -172,12 +216,30 @@ header{
     .portfolio h3{
         text-shadow: 3px 3px black;
     }
+    .contato{
+        padding-top: 0.5em;
+        padding-bottom: 2em;
+    }
+
+    .contato h3{
+        padding-left: 2em;
+        font-size: 1.5em;
+    }
+
+    .contato a{
+        font-size: 1.5em;
+    }
 }
 
 @media (min-width: 940px) {
     .grid{
         column-gap: 8em;
         justify-content: center
+    }
+
+    .contato h3{
+        padding-left: 3em;
+        font-size: 2em;
     }
 }
 
@@ -187,6 +249,26 @@ header{
         grid-template-columns: 260px 260px 260px 260px;
         justify-content: center
     }
+
+    .contato h3{
+        padding-left: 5em;
+    }
+}
+
+.contato{
+    background-color: #0029FA;
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 2em;
+}
+
+.contato a{
+    padding: 0.5em;
+    transition: color, 0.5s;
+}
+
+.contato a:hover{
+    color: #F2F2F2;
 }
 
 footer{
@@ -196,10 +278,15 @@ footer{
     display: flex;
     justify-content: center;
     background-color: #F2F2F2;
+    font-weight: bold;
 }
 
 .footer-icon-linkedin, .footer-icon-github{
     color: black;
+}
+
+.footer-icon-linkedin, .footer-icon-github{
+    transition: color, 0.5s;
 }
 
 .footer-icon-github:hover{
