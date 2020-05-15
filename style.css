@@ -142,6 +142,11 @@ header{
     padding-bottom: 2em;
 }
 
+.sobre p{
+    text-indent: 1em;
+    text-align: justify;
+}
+
 .avatar{
     margin-left: 3em;
     margin-right: 2em;
@@ -280,6 +285,10 @@ header{
     text-shadow: 2px 2px black;
 }
 
+.portfolio-tecnologias{
+    color:red;
+}
+
 .portfolio h3{
     margin-top: 2em;
     margin-bottom: 1em;
@@ -396,13 +405,6 @@ header{
         border-radius: 10px;
     }
 
-    .portfolio h2{
-        text-shadow: 3px 3px black;
-    }
-
-    .portfolio h3{
-        text-shadow: 3px 3px black;
-    }
     .contato{
         padding-top: 0.5em;
         padding-bottom: 2em;
@@ -455,7 +457,7 @@ header{
 }
 
 .contato{
-    background-color: #0B42FF;
+    background-color: #482EF2;
     text-align: center;
     padding-bottom: 2em;
     font-size: 2em;
