@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Major+Mono+Display&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/35505cabf9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <nav class="menu">
             <ul>
                 <li><a class="scroll menu-list" href="#contato">Contato</a></li>
-                <li><a class="scroll menu-list" href="#portfolio">Porfolio</a></li>
+                <li><a class="scroll menu-list" href="#portfolio">Portfólio</a></li>
                 <li><a class="scroll menu-list" href="#sobre">Sobre</a></li>
                 <li style="float:left"><a class="scroll logo" href="#home">Igor Coutinho</a></li>
             </ul>
@@ -24,61 +25,206 @@
             <h2 class="site-subtitle animação-digitando">Web Developer</h2>
         </div>
     </header>
+    <section id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <figure>
+            <img class="avatar" src="img/download.png" alt="Igor Coutinho">
+        </figure>
+        <p>
+                Me chamo Igor Coutinho, sou um desenvolvedor web júnior no início de sua carreira profissional como programador.
+        </p>
+        <p>
+                Estudante de Gestão da Tecnologia da Informação, me apaixonei pelo desenvolvimento durante o curso, desde então venho
+            estudando e me encontrei na web, principalmente no desenvolvimento Back-End.
+        </p>
+        <p>
+                A partir desse ponto eu me foquei em aperfeiçoar as melhores tecnologias para o desenvolvimento web, como o PHP e Laravel,
+            JavaScript, Bootstrap e CSS.
+        </p>
+        <p>
+                Sou uma pessoa extrovertida e com facilidade de comunicação e aprendizado, acredito além das habilidades técnicas, essas
+            características também são fundamentais para os desenvolvedores se destacarem no atual mercado de trabalho.
+        </p>
+        <p>
+                Sigo diariamente em aperfeiçoando e buscando sempre adquirir novos conhecimentos que possam acrescentar positivamente em meus
+            conhecimentos.
+        </p>
+    </section>
     <section id="portfolio" class="portfolio">
-        <h2>Tecnologias</h2>
+        <h2>Algumas tecnologias que utilizo</h2>
         <div class="grid">
-            <figure>
-                    <img src="img/php.jpeg" alt="" class="img-portfolio">
-                    <figcaption>PHP</figcaption>
-            </figure>
-            <figure>
-                <img src="img/laravel.png" alt="" class="img-portfolio">
-                <figcaption>Laravel</figcaption>
-            </figure>
-            <figure>
-                <img src="img/javascript.png" alt="" class="img-portfolio">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-                <img src="img/bootstrap-wallpaper.png" alt="" class="img-portfolio">
-                <figcaption>BootStrap</figcaption>
-            </figure>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/php.jpeg" alt="" class="img-portfolio">
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title-lg">Nível de domínio:</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                        </div>
+                        <p class="card-back-subtitle">Avançado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/laravel.png" alt="" class="img-portfolio">
+                            <figcaption>Laravel</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title-lg">Nível de domínio:</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                            <div class="inner-disable"></div>
+                        </div>
+                        <p class="card-back-subtitle">Intermediário</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/javascript.png" alt="" class="img-portfolio">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title-lg">Nível de domínio:</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                            <div class="inner-disable"></div>
+                        </div>
+                        <p class="card-back-subtitle">Intermediário</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/bootstrap-wallpaper.png" alt="" class="img-portfolio">
+                            <figcaption>BootStrap</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title-lg">Nível de domínio:</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                            <div class="inner"></div>
+                        </div>
+                        <p class="card-back-subtitle">Avançado</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3>Projetos</h3>
+        <h3>Alguns dos meus projetos pessoais</h3>
         <div class="grid">
-            <figure>
-                <a href="https://github.com/IgorPC/MarketPlace">
-                    <img src="img/marketplace.jpg" alt="" class="img-portfolio">
-                    <figcaption>The MarketPlace</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/IgorPC/machupicchu">
-                    <img src="img/machupicchu.jpg" alt="" class="img-portfolio">
-                    <figcaption>Machu Picchu</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/IgorPC/gerenciador-de-series">
-                    <img src="img/controller.png" alt="" class="img-portfolio">
-                    <figcaption>Controlador de series</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/IgorPC/api-series">
-                    <img src="img/api.png" alt="" class="img-portfolio">
-                    <figcaption>API - Series</figcaption>
-                </a>
-            </figure>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/marketplace.jpg" alt="" class="img-portfolio">
+                            <figcaption>The MarketPlace</figcaption>
+                        </figure>
+                    </div>
+                       <div class="flip-card-back">
+                           <p class="card-back-title">Tecnologias utilizadas:</p>
+                           <ul class="ul-marketplace">
+                               <li class="card-back-list">Laravel 6</li>
+                               <li class="card-back-list">Bootstrap 4</li>
+                               <li class="card-back-list">JavaScript</li>
+                               <li class="card-back-list">PHP</li>
+                               <li class="card-back-list">MySql</li>
+                               <li class="card-back-list">Jquery</li>
+                           </ul>
+                           <hr>
+                           <a class="card-back-a" href="https://github.com/IgorPC/MarketPlace" target="_blank">Acesse o projeto no GitHub <i class="fab fa-github-alt"></i></a>
+                       </div>
+                   </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/machupicchu.jpg" alt="" class="img-portfolio">
+                            <figcaption>Machu Picchu</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title">Tecnologias utilizadas:</p>
+                        <ul class="ul-machupicchu">
+                            <li class="card-back-list">Bootstrap 4</li>
+                            <li class="card-back-list">CSS 3</li>
+                            <li class="card-back-list">Jquery</li>
+                        </ul>
+                        <hr>
+                        <a class="card-back-a" href="https://github.com/IgorPC/machupicchu" target="_blank">Acesse o projeto no GitHub <i class="fab fa-github-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/controller.png" alt="" class="img-portfolio">
+                            <figcaption>Controlador de Series</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title">Tecnologias utilizadas:</p>
+                        <ul class="ul-controller">
+                            <li class="card-back-list">Bootstrap 4</li>
+                            <li class="card-back-list">Laravel 6</li>
+                            <li class="card-back-list">CSS 3</li>
+                            <li class="card-back-list">SQLITE</li>
+                        </ul>
+                        <hr>
+                        <a class="card-back-a" href="https://github.com/IgorPC/gerenciador-de-series" target="_blank">Acesse o projeto no GitHub <i class="fab fa-github-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure>
+                            <img src="img/api.png" alt="" class="img-portfolio">
+                            <figcaption>API - Series</figcaption>
+                        </figure>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="card-back-title">Tecnologias utilizadas:</p>
+                        <ul class="ul-api">
+                            <li class="card-back-list">Lumen</li>
+                            <li class="card-back-list">PHP</li>
+                        </ul>
+                        <hr>
+                        <a class="card-back-a" href="https://github.com/IgorPC/gerenciador-de-series" target="_blank">Acesse o projeto no GitHub <i class="fab fa-github-alt"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
         <h2>Contato</h2>
         <article>
-            <a href="mailto:igorpc.tv@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/IgorPC"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/igor-c-9a9969112/"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:igorpc.tv@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/IgorPC" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/igor-c-9a9969112/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/igorpcoutinho/" target="_blank"><i class="fab fa-instagram"></i></a>
         </article>
     </section>
 
