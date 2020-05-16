@@ -439,6 +439,12 @@ header{
     .contato h3{
         padding-left: 5em;
     }
+
+    .container{
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1357px) {
