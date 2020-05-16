@@ -35,7 +35,7 @@ body{
         width: 0ch;
     }
     100%{
-        width: 13ch;
+        width: 15ch;
     }
 }
 
@@ -283,10 +283,6 @@ header{
     text-align: center;
     color: #F2F2F2;
     text-shadow: 2px 2px black;
-}
-
-.portfolio-tecnologias{
-    color:red;
 }
 
 .portfolio h3{
