@@ -73,6 +73,7 @@ body{
         font-size: 40px;
     }
 }
+
 header{
     height: 100vh;
     display: flex;
@@ -442,13 +443,15 @@ header{
 
 @media (min-width: 1357px) {
     .avatar{
-        margin-top: 1em;
+        margin-top: 0px;
     }
 }
 
-@media (min-width: 1663px) {
+@media (min-width: 1387px) {
     .avatar{
-        margin-top: -15px;
+        margin-top: -2em;
+        margin-bottom: 1px;
+        height: 250px;
     }
 }
 
