@@ -1,5 +1,8 @@
-<h1>Imersão CSS</h1>
-<h2>Repositorio criado para acompanhar o curso de imersão em CSS da alura.</h2>
+<h1>Portfólio</h1>
+<h2>Repositorio criado para armazenar o meu portfólio.</h2>
 <hr>
+<p><a href="https://igorpc.github.io/portfolio/" target="_blank">Clique aqui para acessar o portfólio</a></p>
 
-<p><a href="https://igorpc.github.io/imersao-css-hipsters/">Clique aqui para acessar o site</a></p>
+<p>Projeto desenvolvido durante a imersão CSS da Alura</p>
+
+
