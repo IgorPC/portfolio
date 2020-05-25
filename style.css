@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #482EF2;
+    background-color: #023e7d;
     background-size: 100vw 100vh;
     color: #F2F2F2;
     font-size: 15px;
@@ -103,7 +103,7 @@ header{
 
 .logo{
     font-family: 'Sriracha', cursive;
-    color: #0004BF;
+    color: #0466c8;
     text-shadow: 0.5px 0.5px 2px black;
     margin-left: 1em;
     display: block;
@@ -114,7 +114,7 @@ header{
 
 .logo:hover{
     color: whitesmoke;
-    text-shadow: 2px 2px 3px #0004BF;
+    text-shadow: 2px 2px 3px #0353a4;
 }
 
 .menu-list {
@@ -126,9 +126,9 @@ header{
 }
 
 .menu-list:hover{
-    background-color: #482EF2;
+    background-color: #023e7d;
     color: #F2F2F2;
-    text-shadow: 1px 1px #482EF2;
+    text-shadow: 1px 1px black;
 }
 
 .site-title, .site-subtitle{
@@ -137,7 +137,7 @@ header{
 }
 
 .sobre{
-    background-color: #35459E;
+    background-color: #33415c;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
@@ -178,7 +178,7 @@ header{
 }
 
 .portfolio{
-    background-color: #3747A6;
+    background-color: #5c677d;
     padding-top: 0.5em;
     padding-bottom: 2em;
 }
@@ -462,7 +462,7 @@ header{
 }
 
 .contato{
-    background-color: #482EF2;
+    background-color: #7d8597;
     text-align: center;
     padding-bottom: 2em;
     font-size: 2em;
